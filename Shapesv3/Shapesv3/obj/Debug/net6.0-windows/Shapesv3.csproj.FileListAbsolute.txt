@@ -1,0 +1,17 @@
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\bin\Debug\net6.0-windows\Shapesv3.exe
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\bin\Debug\net6.0-windows\Shapesv3.deps.json
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\bin\Debug\net6.0-windows\Shapesv3.runtimeconfig.json
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\bin\Debug\net6.0-windows\Shapesv3.dll
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\bin\Debug\net6.0-windows\Shapesv3.pdb
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.csproj.AssemblyReference.cache
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.Form1.resources
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.csproj.GenerateResource.cache
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.AssemblyInfoInputs.cache
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.AssemblyInfo.cs
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.csproj.CoreCompileInputs.cache
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.dll
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\refint\Shapesv3.dll
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.pdb
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\Shapesv3.genruntimeconfig.cache
+C:\Users\BobbyThompson\source\repos\Shapesv3\Shapesv3\obj\Debug\net6.0-windows\ref\Shapesv3.dll
