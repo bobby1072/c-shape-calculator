@@ -1,0 +1,15 @@
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.csproj.AssemblyReference.cache
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.AssemblyInfoInputs.cache
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.AssemblyInfo.cs
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.csproj.CoreCompileInputs.cache
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\bin\Debug\net6.0\shapesv2.exe
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\bin\Debug\net6.0\shapesv2.deps.json
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\bin\Debug\net6.0\shapesv2.runtimeconfig.json
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\bin\Debug\net6.0\shapesv2.dll
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\bin\Debug\net6.0\shapesv2.pdb
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.dll
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\refint\shapesv2.dll
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.pdb
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\shapesv2.genruntimeconfig.cache
+C:\Users\BobbyThompson\source\repos\shapesv2\shapesv2\obj\Debug\net6.0\ref\shapesv2.dll
