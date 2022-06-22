@@ -58,18 +58,41 @@ namespace Shapesv3
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
+            AreaResultLabel.Text = "";
+            PerimResultLabel.Text = "";
             var mainShape = Create(ShapeChoiceBox.Text);
             if (mainShape is Rectangle || mainShape is Triangle)
             {
-                mainShape.BaseWidth = Convert.ToDouble(DimensionBox1.Text);
-                mainShape.LenHeightDie = Convert.ToDouble(DimensionBox2.Text);
+                double recCheck;
+                bool IsDouble = Double.TryParse(DimensionBox1.Text, out recCheck);
+                bool IsDouble2 = Double.TryParse(DimensionBox2.Text, out recCheck);
+                if (IsDouble && IsDouble2)
+                {
+                    mainShape.BaseWidth = Convert.ToDouble(DimensionBox1.Text);
+                    mainShape.LenHeightDie = Convert.ToDouble(DimensionBox2.Text);
+                }
+                else
+                {
+                    mainShape.LenHeightDie = 0;
+                }
             }
             else if (mainShape is Circle)
             {
-                mainShape.LenHeightDie = Convert.ToDouble(DimensionBox1.Text);
+                double recCheck;
+                bool IsDouble = Double.TryParse(DimensionBox1.Text, out recCheck);
+                if (IsDouble)
+                {
+                    mainShape.LenHeightDie = Convert.ToDouble(DimensionBox1.Text);
+                }
+                else
+                {
+                    mainShape.LenHeightDie = 0;
+                }
+
             }
             AreaResultLabel.Text = $"The area is equal to {mainShape.CalculateArea()}";
             PerimResultLabel.Text = $"The perimeter is equal to {mainShape.CalculatePerimeter()}";
+
 
         }
     }
