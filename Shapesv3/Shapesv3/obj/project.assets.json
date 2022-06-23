@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\BobbyThompson\\.nuget\\packages\\": {}
+    "C:\\Users\\DrewMorgan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BobbyThompson\\source\\repos\\Shapesv3\\Shapesv3\\Shapesv3.csproj",
+      "projectUniqueName": "C:\\drew-work\\git-temp\\bobby1072\\c-shape-calculator\\Shapesv3\\Shapesv3\\Shapesv3.csproj",
       "projectName": "Shapesv3",
-      "projectPath": "C:\\Users\\BobbyThompson\\source\\repos\\Shapesv3\\Shapesv3\\Shapesv3.csproj",
-      "packagesPath": "C:\\Users\\BobbyThompson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BobbyThompson\\source\\repos\\Shapesv3\\Shapesv3\\obj\\",
+      "projectPath": "C:\\drew-work\\git-temp\\bobby1072\\c-shape-calculator\\Shapesv3\\Shapesv3\\Shapesv3.csproj",
+      "packagesPath": "C:\\Users\\DrewMorgan\\.nuget\\packages\\",
+      "outputPath": "C:\\drew-work\\git-temp\\bobby1072\\c-shape-calculator\\Shapesv3\\Shapesv3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BobbyThompson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DrewMorgan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

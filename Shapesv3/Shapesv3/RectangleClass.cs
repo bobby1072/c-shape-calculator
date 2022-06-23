@@ -8,21 +8,29 @@ namespace Shapesv3
 {
     public class Rectangle : Shape
     {
-        public override double BaseWidth { get; set; }
-        public override double LenHeightDie { get; set; }
+        public double width { get; set; }
+        public double height { get; set; }
         public override string ShapeName { get; }
         public Rectangle()
         {
             ShapeName = "Rectangle";
         }
+
+        public override void SetDimensions(params double[] dimensions)
+        {
+            width = dimensions[0];
+            height = dimensions[1];
+        }
+
         public override double CalculateArea()
         {
-            double Result = LenHeightDie * BaseWidth;
+            double Result = width * height;
             return Result;
         }
+
         public override double CalculatePerimeter()
         {
-            double Result = (2 * LenHeightDie) + (2 * BaseWidth);
+            double Result = (2 * width) + (2 * height);
             return Result;
         }
     }
