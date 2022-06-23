@@ -8,22 +8,30 @@ namespace Shapesv3
 {
     public class Circle : Shape
     {
-        public override double BaseWidth { get; set; }
-        public override double LenHeightDie { get; set; }
+        private double _diameter;
+
         public override string ShapeName { get; }
+
         public Circle()
         {
             ShapeName = "Circle";
-            BaseWidth = 0;
+
+            _diameter = 0;
         }
+
+        public override void SetDimensions(params double[] dimensions)
+        {
+            _diameter = dimensions[0];
+        }
+
         public override double CalculateArea()
         {
-            double Result = Math.PI * ((LenHeightDie / 2) * (LenHeightDie / 2));
+            double Result = Math.PI * ((_diameter / 2) * (_diameter / 2));
             return Result;
         }
         public override double CalculatePerimeter()
         {
-            double Result = Math.PI * LenHeightDie;
+            double Result = Math.PI * _diameter;
             return Result;
         }
     }

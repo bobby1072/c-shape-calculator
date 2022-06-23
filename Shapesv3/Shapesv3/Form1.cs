@@ -7,17 +7,18 @@ namespace Shapesv3
             InitializeComponent();
             ShapeChoiceBox.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-        public void RequestDimensionValue(string DimensionName, string DimensionName2)
+        public void RequestDimensionValue(string DimensionName, string? DimensionName2 = null)
         {
             DimensionLabel1.Text = $"What is the shape's {DimensionName}? ";
             DimensionBox1.Visible = true;
-            if (DimensionName2 != "")
+
+            if (!string.IsNullOrWhiteSpace(DimensionName2))
             {
                 DimensionLabel2.Text = $"What is the shape's {DimensionName2}? ";
                 DimensionBox2.Visible = true;
             }
         }
-        public static Shape Create(string shapeName)
+        public static Shape CreateShape(string shapeName)
         {
             var type = Type.GetType(typeof(Shape).Namespace + "." + shapeName, throwOnError: false);
             return (Shape)Activator.CreateInstance(type);
@@ -30,6 +31,7 @@ namespace Shapesv3
             DimensionBox2.Visible = false;
             AreaResultLabel.Text = "";
             PerimResultLabel.Text = "";
+
             if (ShapeChoiceBox.Text == "Triangle")
             {
                 RequestDimensionValue("base", "height");
@@ -42,7 +44,7 @@ namespace Shapesv3
             }
             else if (ShapeChoiceBox.Text == "Circle")
             {
-                RequestDimensionValue("Diameter", "");
+                RequestDimensionValue("Diameter");
                 SubmitButton.Visible = true;
             }
         }
@@ -60,40 +62,30 @@ namespace Shapesv3
         {
             AreaResultLabel.Text = "";
             PerimResultLabel.Text = "";
-            var mainShape = Create(ShapeChoiceBox.Text);
-            if (mainShape is Rectangle || mainShape is Triangle)
-            {
-                double recCheck;
-                bool IsDouble = Double.TryParse(DimensionBox1.Text, out recCheck);
-                bool IsDouble2 = Double.TryParse(DimensionBox2.Text, out recCheck);
-                if (IsDouble && IsDouble2)
-                {
-                    mainShape.BaseWidth = Convert.ToDouble(DimensionBox1.Text);
-                    mainShape.LenHeightDie = Convert.ToDouble(DimensionBox2.Text);
-                }
-                else
-                {
-                    mainShape.LenHeightDie = 0;
-                }
-            }
-            else if (mainShape is Circle)
-            {
-                double recCheck;
-                bool IsDouble = Double.TryParse(DimensionBox1.Text, out recCheck);
-                if (IsDouble)
-                {
-                    mainShape.LenHeightDie = Convert.ToDouble(DimensionBox1.Text);
-                }
-                else
-                {
-                    mainShape.LenHeightDie = 0;
-                }
+            var mainShape = CreateShape(ShapeChoiceBox.Text);
 
+            bool isDouble = Double.TryParse(DimensionBox1.Text, out double dimension1);
+            bool isDouble2 = Double.TryParse(DimensionBox2.Text, out double dimension2);
+
+            if (isDouble && isDouble2)
+            {
+                if (mainShape is Rectangle)
+                {
+                    var rect = (Rectangle) mainShape;
+                    rect.SetDimensions(dimension1, dimension2);
+                }
+                else if (mainShape is Triangle tri)
+                {
+                    tri.SetDimensions(dimension1, dimension2);
+                }
             }
+            else if (mainShape is Circle && isDouble)
+            {
+                mainShape.SetDimensions(dimension1);
+            }
+
             AreaResultLabel.Text = $"The area is equal to {mainShape.CalculateArea()}";
             PerimResultLabel.Text = $"The perimeter is equal to {mainShape.CalculatePerimeter()}";
-
-
         }
     }
 }

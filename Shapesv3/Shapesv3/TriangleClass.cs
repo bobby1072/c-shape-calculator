@@ -8,21 +8,35 @@ namespace Shapesv3
 {
     public class Triangle : Shape
     {
-        public override double BaseWidth { get; set; }
-        public override double LenHeightDie { get; set; }
+        private double _base;
+
+        private double _height;
+
         public override string ShapeName { get; }
         public Triangle()
         {
             ShapeName = "Triangle";
         }
+
+        public void SetDimensions(double @base, double height)
+        {
+            SetDimensions(new[] { @base, height });
+        }
+
+        protected override void SetDimensions(params double[] dimensions)
+        {
+            _base = dimensions[0];
+            _height = dimensions[1];
+        }
+
         public override double CalculateArea()
         {
-            double Result = (double)(BaseWidth * LenHeightDie / 2);
+            double Result = (_base * _height / 2);
             return Result;
         }
         public override double CalculatePerimeter()
         {
-            double Result = (double)(BaseWidth * 3);
+            double Result = (_base * 3);
             return Result;
         }
     }

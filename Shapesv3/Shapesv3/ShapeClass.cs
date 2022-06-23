@@ -9,8 +9,7 @@ namespace Shapesv3
     public abstract class Shape
     {
         public abstract string ShapeName { get; }
-        public abstract double LenHeightDie { get; set; }
-        public abstract double BaseWidth { get; set; }
+        protected abstract void SetDimensions(params double[] dimensions);
         public abstract double CalculateArea();
         public abstract double CalculatePerimeter();
 
